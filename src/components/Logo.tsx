@@ -21,7 +21,7 @@ const Logo = ({ className = "", size = 32 }: LogoProps) => {
         cx="20" 
         cy="20" 
         r="18" 
-        stroke="#475569" 
+        stroke="#111111" 
         strokeWidth="2" 
         fill="none"
       />
@@ -31,7 +31,7 @@ const Logo = ({ className = "", size = 32 }: LogoProps) => {
         cx="20" 
         cy="20" 
         r="14" 
-        stroke="#64748b" 
+        stroke="#2F2F2F" 
         strokeWidth="1" 
         fill="none"
         opacity="0.6"
@@ -40,27 +40,27 @@ const Logo = ({ className = "", size = 32 }: LogoProps) => {
       {/* Compass needle - North */}
       <path 
         d="M20 6 L22 12 L20 10 L18 12 Z" 
-        fill="#475569"
+        fill="#FFCB74"
       />
       
       {/* Compass needle - South */}
       <path 
         d="M20 34 L22 28 L20 30 L18 28 Z" 
-        fill="#64748b"
+        fill="#2F2F2F"
         opacity="0.8"
       />
       
       {/* Compass needle - East */}
       <path 
         d="M34 20 L28 22 L30 20 L28 18 Z" 
-        fill="#64748b"
+        fill="#2F2F2F"
         opacity="0.6"
       />
       
       {/* Compass needle - West */}
       <path 
         d="M6 20 L12 22 L10 20 L12 18 Z" 
-        fill="#64748b"
+        fill="#2F2F2F"
         opacity="0.6"
       />
       
@@ -69,7 +69,7 @@ const Logo = ({ className = "", size = 32 }: LogoProps) => {
         cx="20" 
         cy="20" 
         r="3" 
-        fill="#475569"
+        fill="#111111"
       />
       
       {/* Currency symbol overlay */}
@@ -78,7 +78,7 @@ const Logo = ({ className = "", size = 32 }: LogoProps) => {
         y="25" 
         textAnchor="middle" 
         fontSize="8" 
-        fill="white" 
+        fill="#FFCB74" 
         fontWeight="bold"
         fontFamily="Arial, sans-serif"
       >

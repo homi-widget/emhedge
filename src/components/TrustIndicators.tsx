@@ -26,31 +26,31 @@ const TrustIndicators = () => {
   ];
 
   return (
-    <section className="py-24 px-4 relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/20 to-slate-100">
+    <section className="py-24 px-4 relative overflow-hidden bg-gradient-to-br from-[#F6F6F6] via-[#FFCB74]/10 to-[#F6F6F6]">
       {/* Background Pattern */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Hexagonal Grid */}
         <svg className="absolute top-0 left-0 w-full h-full opacity-8" viewBox="0 0 800 600">
           <defs>
             <pattern id="hexagons" x="0" y="0" width="60" height="52" patternUnits="userSpaceOnUse">
-              <polygon points="30,2 50,17 50,35 30,50 10,35 10,17" fill="none" stroke="#e2e8f0" strokeWidth="1"/>
+              <polygon points="30,2 50,17 50,35 30,50 10,35 10,17" fill="none" stroke="#F6F6F6" strokeWidth="1"/>
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#hexagons)" />
         </svg>
 
         {/* Gradient Orbs */}
-        <div className="absolute top-10 left-10 w-40 h-40 bg-gradient-to-br from-blue-200/20 to-purple-200/10 rounded-full blur-2xl" />
-        <div className="absolute bottom-20 right-20 w-32 h-32 bg-gradient-to-tl from-slate-200/25 to-indigo-200/15 rounded-full blur-xl" />
-        <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-gradient-to-r from-blue-300/15 to-slate-300/10 rounded-full blur-lg" />
+        <div className="absolute top-10 left-10 w-40 h-40 bg-gradient-to-br from-[#FFCB74]/20 to-[#2F2F2F]/10 rounded-full blur-2xl" />
+        <div className="absolute bottom-20 right-20 w-32 h-32 bg-gradient-to-tl from-[#F6F6F6]/25 to-[#FFCB74]/15 rounded-full blur-xl" />
+        <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-gradient-to-r from-[#FFCB74]/15 to-[#2F2F2F]/10 rounded-full blur-lg" />
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-light text-slate-900 mb-6">
+          <h2 className="text-4xl font-light text-[#111111] mb-6">
             Why Leading VCs Trust EmHedge
           </h2>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <p className="text-xl text-[#2F2F2F] max-w-2xl mx-auto">
             Built on expertise, transparency, and a deep understanding of 
             venture capital's unique challenges in emerging markets.
           </p>
@@ -60,13 +60,13 @@ const TrustIndicators = () => {
           {indicators.map((indicator, index) => (
             <div key={index} className="text-center group">
               <div className="mb-6">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-white to-slate-50 rounded-full shadow-sm mb-4 border border-slate-200/50 group-hover:shadow-md transition-all duration-300">
-                  <indicator.icon className="h-8 w-8 text-slate-700 group-hover:text-blue-600 transition-colors" />
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-white to-[#F6F6F6] rounded-full shadow-sm mb-4 border border-[#F6F6F6] group-hover:shadow-md transition-all duration-300">
+                  <indicator.icon className="h-8 w-8 text-[#111111] group-hover:text-[#FFCB74] transition-colors" />
                 </div>
-                <h3 className="text-lg font-medium text-slate-900 mb-3">
+                <h3 className="text-lg font-medium text-[#111111] mb-3">
                   {indicator.title}
                 </h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
+                <p className="text-[#2F2F2F] text-sm leading-relaxed">
                   {indicator.description}
                 </p>
               </div>

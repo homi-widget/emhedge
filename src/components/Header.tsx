@@ -1,6 +1,7 @@
 
-import { TrendingUp, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Logo from "@/components/Logo";
 
 const Header = () => {
   return (
@@ -8,7 +9,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
-            <TrendingUp className="h-8 w-8 text-slate-700" />
+            <Logo className="text-slate-700" size={32} />
             <span className="text-xl font-light text-slate-900">EmHedge</span>
           </div>
 

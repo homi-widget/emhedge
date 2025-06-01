@@ -1,9 +1,9 @@
-
 import { useState } from "react";
 import { DollarSign, Building2, MapPin, Calendar, Globe } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import Header from "@/components/Header";
+import MapVisualization from "@/components/MapVisualization";
 
 interface Investment {
   id: string;
@@ -143,6 +143,11 @@ const Dashboard = () => {
               <p className="text-sm text-[#2F2F2F] mt-1">Countries of operation</p>
             </CardContent>
           </Card>
+        </div>
+
+        {/* Map Visualization */}
+        <div className="mb-8">
+          <MapVisualization investments={investments} />
         </div>
 
         {/* Investments Table */}

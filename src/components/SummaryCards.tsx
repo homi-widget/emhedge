@@ -1,16 +1,6 @@
-
 import { DollarSign, Building2, Globe } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
-interface Investment {
-  id: string;
-  companyName: string;
-  amountInvested: number;
-  currency: string;
-  dateOfInvestment: string;
-  countryOfCompany: string;
-  operatingCountries: string[];
-}
+import { Investment } from "./map/types";
 
 interface SummaryCardsProps {
   investments: Investment[];

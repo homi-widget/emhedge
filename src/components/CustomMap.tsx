@@ -1,17 +1,7 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Globe } from "lucide-react";
-
-interface Investment {
-  id: string;
-  companyName: string;
-  amountInvested: number;
-  currency: string;
-  dateOfInvestment: string;
-  countryOfCompany: string;
-  operatingCountries: string[];
-}
+import { Investment } from "./map/types";
 
 interface CustomMapProps {
   investments: Investment[];

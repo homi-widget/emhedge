@@ -1,20 +1,10 @@
-
 import { useState } from "react";
 import Header from "@/components/Header";
 import CustomMap from "@/components/CustomMap";
 import SummaryCards from "@/components/SummaryCards";
 import InvestmentsTable from "@/components/InvestmentsTable";
 import DashboardHeader from "@/components/DashboardHeader";
-
-interface Investment {
-  id: string;
-  companyName: string;
-  amountInvested: number;
-  currency: string;
-  dateOfInvestment: string;
-  countryOfCompany: string;
-  operatingCountries: string[];
-}
+import { Investment } from "@/components/map/types";
 
 const Dashboard = () => {
   const [investments] = useState<Investment[]>([

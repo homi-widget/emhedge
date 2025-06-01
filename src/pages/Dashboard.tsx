@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import Header from "@/components/Header";
-import MapVisualization from "@/components/MapVisualization";
+import CustomMap from "@/components/CustomMap";
 import SummaryCards from "@/components/SummaryCards";
 import InvestmentsTable from "@/components/InvestmentsTable";
 import DashboardHeader from "@/components/DashboardHeader";
@@ -74,7 +74,7 @@ const Dashboard = () => {
         <SummaryCards investments={investments} />
         
         <div className="mb-8">
-          <MapVisualization investments={investments} />
+          <CustomMap investments={investments} />
         </div>
 
         <InvestmentsTable investments={investments} />
